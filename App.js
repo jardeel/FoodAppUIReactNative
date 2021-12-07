@@ -8,7 +8,6 @@ import DetailsScreen from './src/views/screens/DetailsScreen';
 import BottomNavigator from './src/views/navigation/BottomNavigator';
 import OnBoardScreen from './src/views/screens/OnBoardScreen';
 
-
 const Stack = createStackNavigator();
 
 const App = () => {
@@ -18,7 +17,7 @@ const App = () => {
       <Stack.Navigator screenOptions={{headerShown: false}}>
         <Stack.Screen name="BoardScreen" component={OnBoardScreen}/>
         <Stack.Screen name="Home" component={BottomNavigator} />
-        <Stack.Screen name="DetailsScreen" component={DetailsScreen}/>
+        <Stack.Screen name="DetailsScreen" component={DetailsScreen}/> 
       </Stack.Navigator>
     </NavigationContainer>
   );
